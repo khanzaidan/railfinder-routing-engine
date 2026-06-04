@@ -1,0 +1,24 @@
+{
+  "JBN": [
+    { "to": "CNB", "trainName": "Seemanchal Exp", "trainNo": "12487", "departureTime": "20:35", "arrivalTime": "14:15", "dayOffset": 1 }
+  ],
+  "CNB": [
+    { "to": "BPL", "trainName": "Pbh Bpl Express", "trainNo": "12184", "departureTime": "00:07", "arrivalTime": "08:30", "dayOffset": 0 },
+    { "to": "RKMP", "trainName": "Gkp Hdp Spl", "trainNo": "01416", "departureTime": "00:25", "arrivalTime": "10:30", "dayOffset": 0 },
+    { "to": "SHRN", "trainName": "Pnbe Indb Exp", "trainNo": "19322", "departureTime": "00:35", "arrivalTime": "09:30", "dayOffset": 0 },
+    { "to": "RKMP", "trainName": "Kushinagar Exp", "trainNo": "22537", "departureTime": "01:30", "arrivalTime": "10:12", "dayOffset": 0 },
+    { "to": "BPL", "trainName": "Gkp Ltt Sf Exp", "trainNo": "20104", "departureTime": "06:20", "arrivalTime": "14:35", "dayOffset": 0 },
+    { "to": "BPL", "trainName": "Udyog Nagri Exp", "trainNo": "12174", "departureTime": "07:50", "arrivalTime": "15:55", "dayOffset": 0 },
+    { "to": "BPL", "trainName": "Ltt Express", "trainNo": "12144", "departureTime": "08:20", "arrivalTime": "17:15", "dayOffset": 0 },
+    { "to": "BPL", "trainName": "Rapti Sagar Exp", "trainNo": "12521", "departureTime": "13:17", "arrivalTime": "20:55", "dayOffset": 0 },
+    { "to": "RKMP", "trainName": "Gkp Pnvl Exp", "trainNo": "15065", "departureTime": "16:00", "arrivalTime": "00:35", "dayOffset": 1 },
+    { "to": "SHRN", "trainName": "Kir Mmct Spl", "trainNo": "09190", "departureTime": "17:40", "arrivalTime": "03:50", "dayOffset": 1 },
+    { "to": "BPL", "trainName": "Gkp Ypr Express", "trainNo": "15023", "departureTime": "17:55", "arrivalTime": "02:55", "dayOffset": 1 },
+    { "to": "SHRN", "trainName": "Mahakal Express", "trainNo": "20413", "departureTime": "20:50", "arrivalTime": "04:40", "dayOffset": 1 },
+    { "to": "BPL", "trainName": "Gkp Csmt Spl", "trainNo": "01080", "departureTime": "22:25", "arrivalTime": "08:30", "dayOffset": 1 },
+    { "to": "RKMP", "trainName": "Pushpak Express", "trainNo": "12533", "departureTime": "23:10", "arrivalTime": "07:22", "dayOffset": 1 }
+  ],
+  "RKMP": [],
+  "BPL": [],
+  "SHRN": []
+}
