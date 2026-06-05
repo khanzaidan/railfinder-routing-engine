@@ -1,0 +1,51 @@
+/* ── Tailwind layers ──────────────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base resets (Tailwind Preflight covers the rest) ─────────── */
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+/* ── Material Symbols tweaks ──────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+  user-select: none;
+}
+
+/* ── Spinner keyframes (used by .btn-spinner / .page-spinner) ─── */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@layer components {
+  .btn-spinner {
+    @apply inline-block w-[18px] h-[18px] rounded-full;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: #fff;
+    animation: spin 0.7s linear infinite;
+  }
+
+  .page-spinner {
+    @apply inline-block w-8 h-8 rounded-full;
+    border: 3px solid #e2e8f0;
+    border-top-color: #2563eb;
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+/* ── Card hover lift ──────────────────────────────────────────── */
+article {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+article:hover {
+  transform: translateY(-2px);
+}
+
+/* ── Scrollbar helpers ────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

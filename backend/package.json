@@ -1,0 +1,17 @@
+{
+  "name": "railfinder-backend",
+  "version": "1.0.0",
+  "description": "RailFinder Express API — graph-traversal routing engine",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

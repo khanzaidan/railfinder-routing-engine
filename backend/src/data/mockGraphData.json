@@ -1,0 +1,110 @@
+{
+  "_note": "Route-based schedule format. The controller's normaliseRouteData() converts this to flat edges at startup. Adding new trains here requires zero algorithm changes.",
+
+  "stations": [
+    { "code": "JBN",  "name": "Jogbani",              "state": "Bihar",          "zone": "NFR" },
+    { "code": "CNB",  "name": "Kanpur Central",        "state": "Uttar Pradesh",  "zone": "NCR" },
+    { "code": "RKMP", "name": "Rani Kamalapati",       "state": "Madhya Pradesh", "zone": "WCR" },
+    { "code": "HWH",  "name": "Howrah / Kolkata",      "state": "West Bengal",    "zone": "ER"  },
+    { "code": "PNBE", "name": "Patna Junction",        "state": "Bihar",          "zone": "ECR" },
+    { "code": "NDLS", "name": "New Delhi",             "state": "Delhi",          "zone": "NR"  },
+    { "code": "BPL",  "name": "Bhopal Junction",       "state": "Madhya Pradesh", "zone": "WCR" },
+    { "code": "KIR",  "name": "Katihar Junction",      "state": "Bihar",          "zone": "NFR" }
+  ],
+
+  "trains": [
+
+    {
+      "trainNumber": "12487",
+      "trainName": "Seemanchal Express",
+      "type": "Superfast",
+      "runningDays": ["M", "T", "W", "T", "F", "S", "S"],
+      "classes": ["1A", "2A", "3A", "SL"],
+      "route": [
+        { "stationCode": "JBN", "stationName": "Jogbani",         "arrivalTime": "00:00", "departureTime": "20:45", "dayOffset": 0, "platform": "1" },
+        { "stationCode": "CNB", "stationName": "Kanpur Central",  "arrivalTime": "14:00", "departureTime": "14:15", "dayOffset": 1, "platform": "5" }
+      ],
+      "distanceKm": 980
+    },
+
+    {
+      "trainNumber": "15065",
+      "trainName": "GKP PNVL Express",
+      "type": "Express",
+      "runningDays": ["M", "T", "T", "S"],
+      "classes": ["2A", "3A", "SL"],
+      "route": [
+        { "stationCode": "CNB",  "stationName": "Kanpur Central",  "arrivalTime": "15:45", "departureTime": "16:00", "dayOffset": 0, "platform": "3" },
+        { "stationCode": "RKMP", "stationName": "Rani Kamalapati", "arrivalTime": "00:35", "departureTime": "00:00", "dayOffset": 1, "platform": "2" }
+      ],
+      "distanceKm": 540
+    },
+
+    {
+      "trainNumber": "13160",
+      "trainName": "JBN KOAA Express",
+      "type": "Express",
+      "runningDays": ["M", "W", "F"],
+      "classes": ["3A", "SL", "2S"],
+      "route": [
+        { "stationCode": "JBN", "stationName": "Jogbani",          "arrivalTime": "00:00", "departureTime": "14:30", "dayOffset": 0, "platform": "2" },
+        { "stationCode": "HWH", "stationName": "Howrah / Kolkata", "arrivalTime": "03:45", "departureTime": "00:00", "dayOffset": 1, "platform": "8" }
+      ],
+      "distanceKm": 510
+    },
+
+    {
+      "_comment": "Additional connecting trains for a richer graph",
+      "trainNumber": "12533",
+      "trainName": "Pushpak Express",
+      "type": "Superfast",
+      "runningDays": ["M", "T", "W", "T", "F", "S", "S"],
+      "classes": ["1A", "2A", "3A", "SL", "GN"],
+      "route": [
+        { "stationCode": "CNB",  "stationName": "Kanpur Central",  "arrivalTime": "23:00", "departureTime": "23:10", "dayOffset": 0, "platform": "5" },
+        { "stationCode": "RKMP", "stationName": "Rani Kamalapati", "arrivalTime": "07:22", "departureTime": "00:00", "dayOffset": 1, "platform": "3" }
+      ],
+      "distanceKm": 426
+    },
+
+    {
+      "trainNumber": "22537",
+      "trainName": "Kushinagar Express",
+      "type": "Express",
+      "runningDays": ["M", "T", "W", "T", "F", "S", "S"],
+      "classes": ["2A", "3A", "SL", "GN"],
+      "route": [
+        { "stationCode": "CNB",  "stationName": "Kanpur Central",  "arrivalTime": "01:20", "departureTime": "01:30", "dayOffset": 0, "platform": "3" },
+        { "stationCode": "RKMP", "stationName": "Rani Kamalapati", "arrivalTime": "10:12", "departureTime": "00:00", "dayOffset": 0, "platform": "4" }
+      ],
+      "distanceKm": 418
+    },
+
+    {
+      "trainNumber": "12565",
+      "trainName": "Bihar Sampark Kranti",
+      "type": "Superfast",
+      "runningDays": ["M", "T", "W", "T", "F", "S", "S"],
+      "classes": ["2A", "3A", "SL"],
+      "route": [
+        { "stationCode": "JBN",  "stationName": "Jogbani",        "arrivalTime": "00:00", "departureTime": "06:00", "dayOffset": 0, "platform": "1" },
+        { "stationCode": "PNBE", "stationName": "Patna Junction", "arrivalTime": "12:45", "departureTime": "00:00", "dayOffset": 0, "platform": "7" }
+      ],
+      "distanceKm": 365
+    },
+
+    {
+      "trainNumber": "12309",
+      "trainName": "Rajdhani Express",
+      "type": "Rajdhani",
+      "runningDays": ["M", "T", "W", "T", "F", "S", "S"],
+      "classes": ["1A", "2A", "3A"],
+      "route": [
+        { "stationCode": "PNBE", "stationName": "Patna Junction", "arrivalTime": "19:25", "departureTime": "19:35", "dayOffset": 0, "platform": "1" },
+        { "stationCode": "NDLS", "stationName": "New Delhi",      "arrivalTime": "07:00", "departureTime": "00:00", "dayOffset": 1, "platform": "12" }
+      ],
+      "distanceKm": 1003
+    }
+
+  ]
+}

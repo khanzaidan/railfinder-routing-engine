@@ -1,19 +1,18 @@
 {
-  "name": "rail-finder",
+  "name": "railfinder-monorepo",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "RailFinder — monorepo root. Runs Express API + Vite frontend together.",
+  "private": true,
   "engines": {
     "node": "24.x"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+  "scripts": {
+    "dev": "concurrently --names \" API , UI \" --prefix-colors \"bgCyan.bold,bgMagenta.bold\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npm run start --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }

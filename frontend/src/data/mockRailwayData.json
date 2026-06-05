@@ -1,0 +1,349 @@
+{
+  "_note": "Seemanchal Express hub arrivals from IRCTC timetable. Connecting-train metadata from published schedules (journeyMins estimated).",
+
+  "originTrain": {
+    "trainNo":      "12487",
+    "trainName":    "Seemanchal Express",
+    "trainType":    "Superfast",
+    "runningDays":  ["M","T","W","Th","F","Sa","Su"],
+    "classes":      ["1A","2A","3A","SL"],
+    "source":       "JBN",
+    "sourceName":   "Jogbani",
+    "departure":    "20:35",
+    "totalDistanceKm": 1658,
+    "hubs": [
+      { "code": "KIR",      "name": "Katihar Junction",     "arrival": "22:30", "dayOffset": 0, "platform": 2  },
+      { "code": "BJU",      "name": "Barauni Junction",     "arrival": "01:00", "dayOffset": 1, "platform": 4  },
+      { "code": "PNBE",     "name": "Patna Junction",       "arrival": "04:15", "dayOffset": 1, "platform": 8  },
+      { "code": "BSB",      "name": "Varanasi Junction",    "arrival": "13:45", "dayOffset": 1, "platform": 9  },
+      { "code": "CNB",      "name": "Kanpur Central",       "arrival": "20:15", "dayOffset": 1, "platform": 4  },
+      { "code": "NDLS/NZM", "name": "Delhi / Nizamuddin",  "arrival": "08:05", "dayOffset": 2, "platform": 16 }
+    ]
+  },
+
+  "destination": {
+    "code": "RKMP",
+    "name": "Rani Kamlapati (Bhopal)"
+  },
+
+  "validDestinations": ["RKMP", "BPL"],
+
+  "routes": [
+
+    {
+      "viaStation": "Katihar Junction (KIR)",
+      "viaCode": "KIR",
+      "trains": [
+        {
+          "name": "Kyq Dadn Exp", "id": "19306",
+          "trainType": "Express", "runningDays": ["Su"],
+          "classes": ["3A","SL","GN"],
+          "departure": "17:20", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 2200, "expectedPlatform": 3
+        },
+        {
+          "name": "Agtl Rkmp Spl", "id": "01666",
+          "trainType": "Special", "runningDays": ["Su","M"],
+          "classes": ["3A","SL"],
+          "departure": "17:20", "destination": "RKMP",
+          "journeyMins": 940, "distanceKm": 1230, "expectedPlatform": 1
+        }
+      ]
+    },
+
+    {
+      "viaStation": "Barauni Junction (BJU)",
+      "viaCode": "BJU",
+      "trains": [
+        {
+          "name": "Kir Mmct Spl", "id": "09190",
+          "trainType": "Special", "runningDays": ["M"],
+          "classes": ["3A","SL"],
+          "departure": "03:10", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 1100, "expectedPlatform": 2
+        },
+        {
+          "name": "Shc Adi Exp", "id": "19484",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["3A","SL","GN"],
+          "departure": "19:35", "destination": "RKMP",
+          "journeyMins": 805, "distanceKm": 1200, "expectedPlatform": 1
+        }
+      ]
+    },
+
+    {
+      "viaStation": "Patna Junction (PNBE)",
+      "viaCode": "PNBE",
+      "trains": [
+        {
+          "name": "Pnbe Adi Exp", "id": "19422",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "10:15", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 1540, "expectedPlatform": 6
+        },
+        {
+          "name": "Indore Express", "id": "19314",
+          "trainType": "Express", "runningDays": ["T","F"],
+          "classes": ["2A","3A","SL"],
+          "departure": "11:25", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 1180, "expectedPlatform": 7
+        },
+        {
+          "name": "Pnbe Dadn Spl", "id": "09344",
+          "trainType": "Special", "runningDays": ["Sa"],
+          "classes": ["3A","SL"],
+          "departure": "21:30", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 1900, "expectedPlatform": 5
+        }
+      ]
+    },
+
+    {
+      "viaStation": "Varanasi Junction (BSB)",
+      "viaCode": "BSB",
+      "trains": [
+        {
+          "name": "Gkp Adi Express", "id": "19490",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "02:25", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 900, "expectedPlatform": 3
+        },
+        {
+          "name": "Mahakal Express", "id": "20413",
+          "trainType": "Express", "runningDays": ["T","Sa"],
+          "classes": ["3A","SL"],
+          "departure": "14:00", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 900, "expectedPlatform": 5
+        },
+        {
+          "name": "Kamayani Exp", "id": "11072",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "16:00", "destination": "BPL",
+          "journeyMins": 960, "distanceKm": 924, "expectedPlatform": 2
+        },
+        {
+          "name": "Gkp Dr Spl", "id": "01028",
+          "trainType": "Special", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["3A","SL"],
+          "departure": "18:57", "destination": "RKMP",
+          "journeyMins": 1023, "distanceKm": 950, "expectedPlatform": 4
+        }
+      ]
+    },
+
+    {
+      "viaStation": "Kanpur Central (CNB)",
+      "viaCode": "CNB",
+      "trains": [
+        {
+          "name": "Ljn Pune Exp", "id": "12104",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "17:55", "destination": "BPL",
+          "journeyMins": 575, "distanceKm": 418, "expectedPlatform": 7
+        },
+        {
+          "name": "Pbh Bpl Express", "id": "12184",
+          "trainType": "Express", "runningDays": ["T","Th","Sa"],
+          "classes": ["2A","3A","SL","GN"],
+          "departure": "00:07", "destination": "BPL",
+          "journeyMins": 563, "distanceKm": 418, "expectedPlatform": 3
+        },
+        {
+          "name": "Gkp Hdp Spl", "id": "01416",
+          "trainType": "Special", "runningDays": ["M","W","F"],
+          "classes": ["3A","SL"],
+          "departure": "00:25", "destination": "RKMP",
+          "journeyMins": 605, "distanceKm": 426, "expectedPlatform": 6
+        },
+        {
+          "name": "Pnbe Indb Exp", "id": "19322",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["3A","SL","GN"],
+          "departure": "00:35", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 420, "expectedPlatform": 4
+        },
+        {
+          "name": "Kushinagar Exp", "id": "22537",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL","GN"],
+          "departure": "01:30", "destination": "BPL",
+          "journeyMins": 510, "distanceKm": 418, "expectedPlatform": 3
+        },
+        {
+          "name": "Gkp Ltt Sf Exp", "id": "20104",
+          "trainType": "Superfast", "runningDays": ["T","Sa"],
+          "classes": ["2A","3A","SL"],
+          "departure": "06:20", "destination": "BPL",
+          "journeyMins": 495, "distanceKm": 418, "expectedPlatform": 8
+        },
+        {
+          "name": "Udyog Nagri Exp", "id": "12174",
+          "trainType": "Express", "runningDays": ["M","W","F"],
+          "classes": ["3A","SL","GN"],
+          "departure": "07:50", "destination": "BPL",
+          "journeyMins": 495, "distanceKm": 418, "expectedPlatform": 5
+        },
+        {
+          "name": "Ltt Express", "id": "12144",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "08:20", "destination": "BPL",
+          "journeyMins": 535, "distanceKm": 418, "expectedPlatform": 2
+        },
+        {
+          "name": "Rapti Sagar Exp", "id": "12521",
+          "trainType": "Express", "runningDays": ["M","W","F"],
+          "classes": ["2A","3A","SL"],
+          "departure": "13:17", "destination": "BPL",
+          "journeyMins": 493, "distanceKm": 418, "expectedPlatform": 4
+        },
+        {
+          "name": "Gkp Pnvl Exp", "id": "15065",
+          "trainType": "Express", "runningDays": ["M","Th"],
+          "classes": ["2A","3A","SL","GN"],
+          "departure": "16:00", "destination": "RKMP",
+          "journeyMins": 515, "distanceKm": 426, "expectedPlatform": 7
+        },
+        {
+          "name": "Gkp Ypr Express", "id": "15023",
+          "trainType": "Express", "runningDays": ["M","Th","Sa"],
+          "classes": ["2A","3A","SL"],
+          "departure": "17:55", "destination": "BPL",
+          "journeyMins": 540, "distanceKm": 418, "expectedPlatform": 9
+        },
+        {
+          "name": "Mahakal Express", "id": "20413",
+          "trainType": "Express", "runningDays": ["T","Sa"],
+          "classes": ["3A","SL"],
+          "departure": "20:50", "destination": "SHRN",
+          "journeyMins": null, "distanceKm": 420, "expectedPlatform": 5
+        },
+        {
+          "name": "Gkp Csmt Spl", "id": "01080",
+          "trainType": "Special", "runningDays": ["M","Th"],
+          "classes": ["3A","SL"],
+          "departure": "22:25", "destination": "BPL",
+          "journeyMins": 605, "distanceKm": 418, "expectedPlatform": 1
+        },
+        {
+          "name": "Pushpak Express", "id": "12533",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL","GN"],
+          "departure": "23:10", "destination": "BPL",
+          "journeyMins": 492, "distanceKm": 426, "expectedPlatform": 5
+        }
+      ]
+    },
+
+    {
+      "viaStation": "Delhi / Nizamuddin (NDLS/NZM)",
+      "viaCode": "NDLS/NZM",
+      "trains": [
+        {
+          "name": "Chhatisgarh Exp", "id": "18238",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "04:25", "destination": "BPL",
+          "journeyMins": 570, "distanceKm": 696, "expectedPlatform": 12
+        },
+        {
+          "name": "Millenium Exp", "id": "12646",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "05:10", "destination": "BPL",
+          "journeyMins": 520, "distanceKm": 696, "expectedPlatform": 14
+        },
+        {
+          "name": "Punjab Mail", "id": "12138",
+          "trainType": "Mail", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "05:10", "destination": "BPL",
+          "journeyMins": 500, "distanceKm": 696, "expectedPlatform": 15
+        },
+        {
+          "name": "Smpark Krnt Exp", "id": "12652",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "05:20", "destination": "BPL",
+          "journeyMins": 510, "distanceKm": 696, "expectedPlatform": 16
+        },
+        {
+          "name": "Mngla Lksdp Exp", "id": "12618",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "05:35", "destination": "BPL",
+          "journeyMins": 510, "distanceKm": 696, "expectedPlatform": 12
+        },
+        {
+          "name": "Shatabdi Express", "id": "12002",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa"],
+          "classes": ["1A","CC"],
+          "departure": "06:00", "destination": "BPL",
+          "journeyMins": 475, "distanceKm": 696, "expectedPlatform": 1
+        },
+        {
+          "name": "Samta Express", "id": "12808",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "07:00", "destination": "BPL",
+          "journeyMins": 495, "distanceKm": 696, "expectedPlatform": 10
+        },
+        {
+          "name": "Karntk S Kranti", "id": "22686",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "08:15", "destination": "BPL",
+          "journeyMins": 495, "distanceKm": 696, "expectedPlatform": 16
+        },
+        {
+          "name": "Ypr S Kranti", "id": "12650",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "08:20", "destination": "BPL",
+          "journeyMins": 505, "distanceKm": 696, "expectedPlatform": 8
+        },
+        {
+          "name": "Patalkot Exp", "id": "20424",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "11:20", "destination": "BPL",
+          "journeyMins": 505, "distanceKm": 696, "expectedPlatform": 11
+        },
+        {
+          "name": "Jhelum Express", "id": "11078",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "11:30", "destination": "BPL",
+          "journeyMins": 510, "distanceKm": 696, "expectedPlatform": 9
+        },
+        {
+          "name": "Sachkhand Exp", "id": "12716",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["1A","2A","3A","SL"],
+          "departure": "13:00", "destination": "BPL",
+          "journeyMins": 495, "distanceKm": 696, "expectedPlatform": 13
+        },
+        {
+          "name": "Himsagar Exp", "id": "16318",
+          "trainType": "Express", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "14:00", "destination": "BPL",
+          "journeyMins": 495, "distanceKm": 696, "expectedPlatform": 7
+        },
+        {
+          "name": "Nzm Jbp Sf Exp", "id": "12191",
+          "trainType": "Superfast", "runningDays": ["M","T","W","Th","F","Sa","Su"],
+          "classes": ["2A","3A","SL"],
+          "departure": "14:05", "destination": "BPL",
+          "journeyMins": 505, "distanceKm": 696, "expectedPlatform": 14
+        }
+      ]
+    }
+
+  ]
+}
